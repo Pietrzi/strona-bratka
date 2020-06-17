@@ -422,16 +422,64 @@ footer {
     position: fixed;
     bottom: 10px;
     right: 70px;
-    transform: rotate(90deg);
-    transition: display 1s ease-in;
-}
-
-.backup-arrow {
     width: 70px;
     height: 70px;
     background-image: url('./assets/left.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transform: rotate(90deg);
+    transition: display 1s ease-in;
 }
 
+.left-rotated-box {
+    width: 5%;
+    height: 450px;
+    position: fixed;
+    left: 0;
+    bottom: 15px;
+    background-color: red;
+}
+
+.left-rotated-link {
+    text-decoration: none;
+    position: relative;
+    top: 70px;
+}
+
+.left-rotated-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    transform: rotate(-90deg);
+}
+
+.left-rotated-text:hover {
+    color: lightblue;
+}
+
+.right-rotated-box {
+    width: 5%;
+    height: 450px;
+    position: fixed;
+    right: 0;
+    bottom: 15px;
+    background-color: blue;
+}
+
+.right-rotated-link {
+    text-decoration: none;
+    position: relative;
+    top: 350px;
+}
+
+.right-rotated-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    transform: rotate(90deg);
+}
+
+.right-rotated-text:hover {
+    color: lightblue;
+}
