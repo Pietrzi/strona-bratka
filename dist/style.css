@@ -1,12 +1,17 @@
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 
 .center-wrapper {
@@ -411,3 +416,22 @@ footer {
     width: 22px;
     height: 22px;
 }
+
+.backup-arrow {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 70px;
+    transform: rotate(90deg);
+    transition: display 1s ease-in;
+}
+
+.backup-arrow {
+    width: 70px;
+    height: 70px;
+    background-image: url('./assets/left.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
