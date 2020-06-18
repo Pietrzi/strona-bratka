@@ -93,37 +93,39 @@ header {
 
 .shape1 {
     position: absolute;
-    top: 100px;
-    left: 25%;
+    bottom: 420px;
+    left: 160px;
     z-index: 12;
 }
 
 .shape2 {
     position: absolute;
-    top: 130px;
-    left: 80%;
+    bottom: 350px;
+    left: 950px;
     z-index: 12;
 }
 
 .shape3 {
     position: absolute;
-    top: 240px;
-    left: 45%;
+    bottom: 220px;
+    left: 440px;
     z-index: 12;
 }
 
 .shape4 {
     position: absolute;
-    top: 710px;
-    left: 35%;
+    bottom: -150px;
+    left: 250px;
     z-index: 12;
+    transform: rotate(90deg);
 }
 
 .shape5 {
     position: absolute;
-    top: 700px;
-    left: 85%;
+    bottom: -120px;
+    left: 1000px;
     z-index: 12;
+    transform: rotate(90deg);
 }
 
 .header-text-holder {
