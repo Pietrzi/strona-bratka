@@ -10,3 +10,12 @@ $(function() {
         }
     });
 });
+
+const mobileMenu = document.querySelector('.mobile-nav-wrapper');
+const mobileMenuNav = document.querySelector('.mobile-nav');
+
+const closeMobileMenu = () => {
+    mobileMenu.style.display = "none";
+}
+
+mobileMenuNav.addEventListener('click', closeMobileMenu);
