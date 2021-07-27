@@ -37,14 +37,15 @@ body {
     font-size: 24px;
     font-weight: 900;
     text-transform: capitalize;
+    color: lightgrey;
 }
 
 .fixed-social-box {
     position: fixed;
     top: 0;
-    right: 5%;
+    right: 6%;
     height: 80px;
-    width: 160px;
+    width: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -54,10 +55,11 @@ body {
 .fixed-social-icon {
     width: 26px;
     height: 26px;
+    color: lightgrey;
 }
 
 .mobile-button-container {
-    background: white;
+    background: #006699;
     padding: 7px;
     display: none;
     position: fixed;
@@ -70,7 +72,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background: white;
+    background: #006699;
     height: 24px;
     width: 20px;
     border: none;
@@ -85,7 +87,7 @@ body {
 .toggle-button-line {
     width: 20px;
     height: 3px;
-    background: black;
+    background: lightgrey;
 }
 
 .mobile-nav-wrapper {
@@ -133,10 +135,11 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #006699;
 }
 
 .navbar-ul {
-    width: 460px;
+    width: 640px;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -148,8 +151,12 @@ a {
     text-decoration: none;
     font-size: 20px;
     font-weight: 700;
-    color: black;
+    color: lightgrey;
     text-transform: capitalize;
+}
+
+.small-nav-text {
+    font-size: 17px;
 }
 
 a:hover {
@@ -157,9 +164,12 @@ a:hover {
     color: blue;
 }
 
+/* header */
+
+
 header {
     width: 100%;
-    height: 900px;
+    height: calc(100vh - 80px);
     background-color: #ffaa80;
     display: flex;
     justify-content: center;
@@ -167,7 +177,80 @@ header {
     position: relative;
 }
 
-.shape1 {
+.header-title {
+    position: absolute;
+    top: 60px;
+    left: 150px;
+    z-index: 5;
+    font-style: italic;
+}
+
+h1 {
+    color: white;
+    font-size: 72px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-size: 54px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.first-header-text {
+    background-color: lightskyblue;
+    color: #006699;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 20px auto 0;
+    width: 320px;
+}
+
+.header-text-holder {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-80%);
+    z-index: 5;
+
+    font-style: italic;
+}
+
+.second-header-text {
+    background-color: moccasin;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.third-header-text {
+    background-color: goldenrod;
+    color: honeydew;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 220px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header-picture {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .shape1 {
     position: absolute;
     bottom: 420px;
     left: 160px;
@@ -226,9 +309,10 @@ h1 {
     right: 80px;
     min-width: 570px;
     height: 750px;
-}
+} */
 
-#shows {
+
+/* #shows {
     width: 100%;
     height: 820px;
     background-color: red;
@@ -315,17 +399,80 @@ h1 {
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 2px;
-}
+} */
+
+
+
+/* o mnie */
+
+
+
 
 #about {
     width: 100%;
-    height: 900px;
     background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.about-box {
+    width: 80%;
+    height: 260px;
     display: flex;
     align-items: center;
 }
 
-.about-image-holder {
+.about-lefty {
+    justify-content: flex-start;
+}
+
+.about-righty {
+    justify-content: flex-end;
+}
+
+.about-text {
+    background-color: navajowhite;
+    color: goldenrod;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.about-pic {
+    height: 100%;
+    object-fit: cover;
+}
+
+.empty-one {
+    width: 1px;
+    height: 1px;
+}
+
+.text1 {
+    position: relative;
+    left: 160px;
+}
+
+.text2 {
+    position: relative;
+    right: 160px;
+}
+
+.text3 {
+    position: relative;
+    left: 160px;
+}
+
+.text4 {
+    position: relative;
+    right: 20px;
+}
+
+/* .about-image-holder {
     width: 50%;
     height: 100%;
     display: flex;
@@ -389,7 +536,7 @@ h1 {
     font-weight: 300;
     width: 430px;
     text-align: justify;
-}
+} */
 
 #videos {
     width: 100%;
@@ -433,11 +580,69 @@ video {
     height: 460px;
 }
 
+
+/* ebooook */
+
+
+
 #gallery {
     width: 100%;
+    background-color: lightgray;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-.gallery-small-header-box {
+.ebook-title {
+    width: 300px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.ebook-pic-holder {
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.ebook-pic {
+    height: 600px;
+    width: 600px;
+    object-fit: fill;
+}
+
+
+.ebook-text {
+    background-color: peachpuff;
+    color: goldenrod;
+    margin: 40px auto 0;
+    text-align: center;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+.etext1 {
+    font-size: 48px;
+    width: 300px;
+}
+
+.etext2 {
+    font-size: 48px;
+    width: 560px;
+}
+
+.etext3 {
+    font-size: 42px;
+    width: 540px;
+}
+
+
+/* .gallery-small-header-box {
     padding-top: 80px;
     display: flex;
     justify-content: center;
@@ -474,15 +679,46 @@ video {
     height: 420px;
     margin: 20px;
     object-fit: cover;
-}
+} */
+
+
+/* skleeeep */
+
 
 #press {
     width: 100%;
     height: 450px;
     background-color: red;
+    padding-top: 60px;
 }
 
-.press-small-header-box {
+.shop-title {
+    width: 260px;
+    height: 100px;
+    font-size: 72px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0 auto 80px;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+.shop-text {
+    width: 480px;
+    height: 50px;
+    font-size: 36px;
+    background-color: black;
+    color: white;
+    margin-left: 100px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+
+/* .press-small-header-box {
     padding-top: 80px;
     display: flex;
     justify-content: center;
@@ -511,7 +747,7 @@ video {
     letter-spacing: 3px;
     color: white;
     margin: 20px 40px;
-}
+} */
 
 #contact {
     width: 100%;
@@ -1004,9 +1240,9 @@ footer {
     }
 
     .social-icons-box {
-        width: 100%;
+        width: 300px;
         justify-content: space-around;
-        margin-top: 40px;
+        margin-top: 40px auto 0;
     }
 
     .social-icon {
